@@ -17,7 +17,7 @@ function PokemonAbout({ id }) {
         }
       });
     } else {
-      abilities = payload;
+      abilities = payload[0].ability.name;
     }
     return abilities;
   }
@@ -61,6 +61,7 @@ function PokemonAbout({ id }) {
             <p className="text-slate-400">Abilities</p>
             <p className="capitalize">
               {printAbilities(pokemonAbout[0].abilities)}
+              {/* hahah */}
             </p>
           </div>
         </div>

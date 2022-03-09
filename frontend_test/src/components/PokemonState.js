@@ -18,6 +18,9 @@ function PokemonState() {
       </>
     );
   }
+
+  console.log(pokemonState);
+
   return (
     <>
       <div className="flex justify-center">
